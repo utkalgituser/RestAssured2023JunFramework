@@ -1,6 +1,6 @@
 package com.qa.gorest.configuration;
 
-import com.qa.gorest.framworkException.APIFrameworkException;
+import com.qa.gorest.frameworkException.APIFrameworkException;
 
 import java.io.FileInputStream;
 import java.io.IOException;

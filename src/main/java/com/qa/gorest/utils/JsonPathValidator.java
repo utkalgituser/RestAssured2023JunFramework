@@ -2,7 +2,7 @@ package com.qa.gorest.utils;
 
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.PathNotFoundException;
-import com.qa.gorest.framworkException.APIFrameworkException;
+import com.qa.gorest.frameworkException.APIFrameworkException;
 import io.restassured.response.Response;
 
 import java.util.List;

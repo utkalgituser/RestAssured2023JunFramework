@@ -1,7 +1,7 @@
 package com.qa.gorest.client;
 
 import com.qa.gorest.consts.APIHttpStatus;
-import com.qa.gorest.framworkException.APIFrameworkException;
+import com.qa.gorest.frameworkException.APIFrameworkException;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;

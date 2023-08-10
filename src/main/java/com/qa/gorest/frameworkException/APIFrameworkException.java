@@ -1,4 +1,4 @@
-package com.qa.gorest.framworkException;
+package com.qa.gorest.frameworkException;
 
 public class APIFrameworkException extends RuntimeException{
 
