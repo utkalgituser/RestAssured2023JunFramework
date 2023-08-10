@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="API Test Regression Suite" thread-count="3"
+       parallel="tests" verbose="4">
+
+    <listeners>
+        <listener
+                class-name="com.qa.gorest.listeners.ExtentReportListener"/>
+    </listeners>
+
+    <test name="API Schema validation Test">
+        <parameter name="baseURI" value="https://gorest.co.in"/>
+        <classes>
+            <class name="com.qa.gorest.tests.APISchemaValidationTest"/>
+        </classes>
+    </test>
+</suite>
