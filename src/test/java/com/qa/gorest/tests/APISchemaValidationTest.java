@@ -31,7 +31,7 @@ public class APISchemaValidationTest extends BaseTest {
     @Test(enabled = true, description = "")
     public void gerUserTest(){
         // Use JsonPathValidator to validate response
-        restClient.get(GOREST_END_POINT+"/"+4475709, true, true)
+        restClient.get(GOREST_END_POINT+"/"+4476699, true, true)
                 .then().log().all()
                 .assertThat().statusCode(APIHttpStatus.OK_200.getCode())
                 .and().body(matchesJsonSchemaInClasspath("getuserschema.json"));
