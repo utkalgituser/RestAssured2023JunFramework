@@ -12,17 +12,9 @@ pipeline
         {
             steps
             {
-                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                echo("RUNNING IN QA to qa done")
             }
-            post
-            {
-                success
-                {
-                    junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'target/*.jar'
-                }
-            }
+
         }
 
 
@@ -38,7 +30,6 @@ pipeline
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/utkalgituser/RestAssured2023JunPractise.git'
                     sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regression.xml"
-
                 }
             }
         }
