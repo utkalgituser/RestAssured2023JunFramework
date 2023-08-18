@@ -12,4 +12,4 @@ COPY src ./src
 WORKDIR /app
 
 # Run Maven tests
-CMD ["mvn", "test"]  
+CMD ["mvn", "test"]
